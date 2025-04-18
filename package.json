@@ -1,0 +1,24 @@
+{
+  "name": "@types/overte-declarations",
+  "version": "0.0.1",
+  "description": "Overte javascript api declarations for typescript.",
+  "license": "ISC",
+  "author": "untamedstarblob",
+  "type": "module",
+  "main": "dist/",
+  "files": [
+    "dist/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "overte-tsd-jsdoc": "^0.0.1"
+  }
+}
