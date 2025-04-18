@@ -1,3 +1,4 @@
 [submodule "overte"]
 	path = overte
 	url = https://github.com/overte-org/overte
+	branch = master
