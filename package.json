@@ -1,11 +1,16 @@
 {
-  "name": "@types/overte-declarations",
+  "name": "overte-declarations",
   "version": "0.0.1",
   "description": "Overte javascript api declarations for typescript.",
   "license": "MIT",
   "author": "untamedstarblob",
   "type": "module",
-  "main": "dist/",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist/*",
     "README.md",
@@ -17,6 +22,9 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "publishConfig": {
+  "access": "public"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
