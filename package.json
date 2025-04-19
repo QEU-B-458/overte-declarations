@@ -12,8 +12,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "npm run get-submodules && npm run setup && npx build.mjs",
-    "setup": " npm add nodejs && npm install",
+    "build": "npm run get-submodules && npm install && npx build.mjs",
     "get-submodules": "git submodule update --init --recursive --remote --merge"
   },
   "private": true,
