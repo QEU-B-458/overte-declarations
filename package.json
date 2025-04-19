@@ -12,13 +12,18 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run get-submodules && npm run setup && npx build.mjs",
+    "setup": " npm add nodejs && npm install",
+    "get-submodules": "git submodule update --init --recursive --remote --merge"
   },
   "private": true,
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "jsdoc": "^3.6.3",
+    "node": "^23.11.0",
     "overte-tsd-jsdoc": "^0.0.1"
   }
 }
