@@ -2,7 +2,7 @@
   "name": "@types/overte-declarations",
   "version": "0.0.1",
   "description": "Overte javascript api declarations for typescript.",
-  "license": "ISC",
+  "license": "MIT",
   "author": "untamedstarblob",
   "type": "module",
   "main": "dist/",
@@ -15,7 +15,6 @@
     "build": "npm run get-submodules && npx node build.mjs",
     "get-submodules": "git submodule update --init --recursive --remote --merge"
   },
-  "private": true,
   "peerDependencies": {
     "typescript": "^5"
   },
